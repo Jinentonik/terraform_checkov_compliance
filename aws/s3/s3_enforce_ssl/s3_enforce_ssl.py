@@ -10,7 +10,7 @@ class S3EnforceSSL(BaseResourceCheck):
     def __init__(self) -> None:
         super().__init__(
             name="Ensure S3 buckets enforce SSL requests via bucket policy",
-            id="CKV_GCC_AWS_001",
+            id="CKV_AWS_998",
             categories=[CheckCategories.NETWORKING],
             supported_resources=["aws_s3_bucket_policy"],
         )
